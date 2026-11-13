@@ -59,7 +59,6 @@ All customer text is real and public. Nothing is lorem ipsum.
 | **Arabic Reviews of SHEIN** (Saudi dialects) | Arabic stream: 1–2 star reviews (broken on arrival, sizes run small, wrong colour). Re-timed into the shift because the source has no timestamps | Apache-2.0 | [HF](https://huggingface.co/datasets/Ruqiya/Arabic_Reviews_of_SHEIN) |
 | **Bitext customer-support dataset** | Labelled ground truth to measure stage 02 accuracy (20 examples per intent) | CDLA-Sharing-1.0 | [HF](https://huggingface.co/datasets/bitext/Bitext-customer-support-llm-chatbot-training-dataset) |
 | DOO public site and Developers Hub | The message schema (inbox, contact, conversation, message) and the product context | — | [doo.ooo](https://www.doo.ooo/) · [developers](https://www.doo.ooo/developers) |
-| Navy theme by Lexington Themes | Design tokens (colors, type, spacing, buttons), scraped with Firecrawl | used with permission for this demo | [navy-astro.pages.dev](https://navy-astro.pages.dev/) |
 | Switzer (Fontshare), Geist Mono, IBM Plex Sans Arabic (Google Fonts) | Type | free licenses | |
 | htmx 2.0.4 | Partial page updates | BSD-2 | [htmx.org](https://htmx.org) |
 

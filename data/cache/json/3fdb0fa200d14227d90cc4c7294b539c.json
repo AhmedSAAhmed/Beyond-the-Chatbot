@@ -1,0 +1,1 @@
+{"results": [{"id": "live_05d7bfcd72", "intent": "damaged_or_defective", "alt_intent": "complaint", "confidence": 0.96, "language": "ar", "sentiment": -2, "urgency": "high", "issue": "item arrived broken", "entities": {"order_id": null, "amount": null, "product": null}, "injection": false}]}

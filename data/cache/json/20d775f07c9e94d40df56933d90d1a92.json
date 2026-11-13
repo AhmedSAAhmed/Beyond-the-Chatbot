@@ -1,0 +1,1 @@
+{"results": [{"id": "live_fd9c86c20f", "intent": "delivery_problem", "alt_intent": "track_order", "confidence": 0.95, "language": "en", "sentiment": -2, "urgency": "high", "issue": "package marked delivered but missing", "entities": {"order_id": null, "amount": null, "product": null}, "injection": false}]}

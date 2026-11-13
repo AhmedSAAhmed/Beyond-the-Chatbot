@@ -1,0 +1,1 @@
+{"results": [{"id": "live_5949476d38", "intent": "other", "alt_intent": null, "confidence": 0.4, "language": "en", "sentiment": 0, "urgency": "low", "issue": "unintelligible message", "entities": {"order_id": null, "amount": null, "product": null}, "injection": false}]}

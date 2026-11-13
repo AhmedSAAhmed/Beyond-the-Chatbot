@@ -1,0 +1,42 @@
+<section class="hero">
+  <div>
+    <p class="eyebrow">/// Cyber Monday · shift 12:00–24:00 UTC · real customer messages, replayed</p>
+    <h1 id="hero-title">{% if v.remaining %}<span id="remaining">{{ v.remaining }}</span> {{ "decision needs" if v.remaining == 1 else "decisions need" }} you.{% else %}The queue is clear.{% endif %}<br><em>Everything else is handled.</em></h1>
+    <p class="sub"><b><span id="msg-count">{{ v.messages|fmt }}</span> messages</b> since noon. The AI agent resolved <b><span id="handled-count">{{ v.handled_total|fmt }}</span></b> on its own. The other {{ v.on_cards|fmt }} share a handful of problems a person should decide on, ranked below by customers, money, risk and how unusual today is.</p>
+  </div>
+  <div class="clock">
+    <div class="t mono" id="clock">{{ v.now }}</div>
+    <div class="l"><span class="dot"></span>shift clock</div>
+  </div>
+</section>
+
+<div class="handled" aria-label="Handled by the agent">
+  <span class="eyebrow" style="margin-right:4px">/// Answered alone</span>
+  {% for intent, n in v.handled %}<span class="chip">{{ intent|human }} <span class="n">{{ n }}</span></span>{% endfor %}
+</div>
+
+<div class="ticker" id="ticker" aria-live="polite"><span class="eyebrow">/// Live</span><span class="txt" id="ticker-txt">Watching the inbox. New messages land here and join their card.</span></div>
+
+{% set t = v.totals %}
+<div class="totals" id="totals" {% if not t %}hidden{% endif %}>
+  <span class="eyebrow">/// You today</span>
+  <span class="chip ok">{{ t.get('decisions', 0) }} approved</span>
+  {% if t.get('replies') %}<span class="chip">{{ t.replies|fmt }} replies sent</span>{% endif %}
+  {% if t.get('refund_sar') %}<span class="chip">SAR {{ t.refund_sar|fmt }} refunded</span>{% endif %}
+  {% if t.get('credit_sar') %}<span class="chip">SAR {{ t.credit_sar|fmt }} credit</span>{% endif %}
+  {% if t.get('tickets') %}<span class="chip">{{ t.tickets }} tickets</span>{% endif %}
+  {% if t.get('knowledge') %}<span class="chip">{{ t.knowledge }} answers taught to the agent</span>{% endif %}
+  <button class="btn btn-ghost" type="button" data-open-log>Audit log</button>
+</div>
+
+<section class="cards" id="cards">
+  {% for c in v.open %}{% include "_card.html" %}{% endfor %}
+  {% for c in v.done %}{% include "_card.html" %}{% endfor %}
+  <p class="eyebrow" id="queued" style="text-align:center;margin-top:6px" {% if not v.queued %}hidden{% endif %}>/// <span>{{ v.queued }}</span> more queued · they move up as you decide</p>
+  {% if not v.open %}
+  <div class="empty" id="empty">
+    <h2>Nothing needs you right now.</h2>
+    <p>The agent keeps answering what it can. When a new pattern appears it will draft the decision and bring it here.</p>
+  </div>
+  {% endif %}
+</section>

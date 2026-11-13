@@ -1,0 +1,447 @@
+[
+ {
+  "title": "Prime deliveries delayed",
+  "situation": "High volume of late Prime deliveries is causing customer dissatisfaction and potential revenue loss.",
+  "hypothesis": "delivery delays",
+  "confidence": 0.95,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We see your order arrived later than promised. We’re investigating the cause and will improve timing. Expect a follow‑up soon.",
+     "reply_ar": "نلاحظ أن طلبك وصل متأخرًا عن الموعد الموعود. نحقق في السبب وسنعمل على تحسين المواعيد. ستتلقى تحديثًا قريبًا."
+    },
+    "why": "Address immediate concern"
+   },
+   {
+    "type": "update_knowledge",
+    "params": {
+     "title": "Why is my Prime delivery late?",
+     "answer_en": "Prime deliveries can be delayed due to high demand, carrier issues, or weather. We monitor and aim to resolve quickly.",
+     "answer_ar": "قد يتأخر توصيل Prime بسبب الطلب العالي أو مشاكل الناقل أو الظروف الجوية. نتابع الأمر ونسعى لحله سريعًا."
+    },
+    "why": "Prevent repeat questions"
+   },
+   {
+    "type": "tag_conversations",
+    "params": {
+     "label": "delivery_delay"
+    },
+    "why": "For reporting"
+   }
+  ],
+  "reply_en": "We see your order arrived later than promised. We’re investigating the cause and will improve timing. Expect a follow‑up soon.",
+  "reply_ar": "نلاحظ أن طلبك وصل متأخرًا عن الموعد الموعود. نحقق في السبب وسنعمل على تحسين المواعيد. ستتلقى تحديثًا قريبًا.",
+  "reply_other": {
+   "es": "Vemos que su pedido llegó más tarde de lo prometido. Estamos investigando la causa y mejoraremos los tiempos. Recibirá una actualización pronto.",
+   "fr": "Nous constatons que votre commande est arrivée en retard. Nous enquêtons sur la cause et améliorerons les délais. Vous recevrez bientôt une mise à jour."
+  },
+  "alternatives": [
+   {
+    "hypothesis": "tracking not updated",
+    "intent": "track_order",
+    "why": "Customers mention static tracking info"
+   },
+   {
+    "hypothesis": "carrier issue",
+    "intent": "delivery_problem",
+    "why": "Delays often stem from carrier problems"
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "delivery_problem-0",
+  "cluster_id": "delivery_problem-0",
+  "evidence_ids": [
+   "m_2080465012",
+   "m_9486422813",
+   "m_6785890806",
+   "m_5750248018",
+   "m_6957278372",
+   "m_6094537700"
+  ]
+ },
+ {
+  "title": "Packages left in unsafe locations",
+  "situation": "Drivers are leaving parcels in unsafe spots, risking theft and damage, requiring immediate response.",
+  "hypothesis": "unsafe_delivery_location",
+  "confidence": 0.92,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We see your parcel was left in an unsafe spot. We’ll contact the carrier to improve delivery handling and will monitor for any issues. If the item is damaged or missing, let us know and we’ll arrange a replacement or refund.",
+     "reply_ar": "نلاحظ أن طردك ترك في مكان غير آمن. سنتواصل مع شركة التوصيل لتحسين طريقة التسليم وسنراقب أي مشاكل. إذا كان الطرد متضررًا أو مفقودًا، أخبرنا وسنرتب استبدالًا أو استردادًا."
+    },
+    "why": "inform customers and set expectation for follow‑up"
+   },
+   {
+    "type": "update_knowledge",
+    "params": {
+     "title": "Parcel left in unsafe location",
+     "answer_en": "If a parcel is left in an unsafe or insecure location, contact support. We will investigate with the carrier and arrange a replacement or refund if the item is damaged or stolen.",
+     "answer_ar": "إذا تم ترك الطرد في مكان غير آمن أو غير مؤمن، يرجى التواصل مع الدعم. سنحقق مع شركة التوصيل ونرتب استبدالًا أو استردادًا إذا كان الطرد متضررًا أو سُرق."
+    },
+    "why": "prevent repeat inquiries"
+   }
+  ],
+  "reply_en": "We see your parcel was left in an unsafe spot. We’ll contact the carrier to improve delivery handling and will monitor for any issues. If the item is damaged or missing, let us know and we’ll arrange a replacement or refund.",
+  "reply_ar": "نلاحظ أن طردك ترك في مكان غير آمن. سنتواصل مع شركة التوصيل لتحسين طريقة التسليم وسنراقب أي مشاكل. إذا كان الطرد متضررًا أو مفقودًا، أخبرنا وسنرتب استبدالًا أو استردادًا.",
+  "reply_other": {
+   "es": "Vemos que tu paquete se dejó en un lugar inseguro. Contactaremos con el transportista para mejorar la entrega y vigilaremos cualquier problema. Si el paquete está dañado o falta, avísanos y gestionaremos un reemplazo o reembolso.",
+   "fr": "Nous constatons que votre colis a été laissé dans un endroit non sécurisé. Nous contacterons le transporteur pour améliorer la livraison et surveillerons tout problème. Si le colis est endommagé ou manquant, informez‑nous et nous organiserons un remplacement ou un remboursement."
+  },
+  "alternatives": [
+   {
+    "hypothesis": "delivery_missed",
+    "intent": "delivery_problem",
+    "why": "Customer may think parcel was missed rather than left unsafe"
+   },
+   {
+    "hypothesis": "package_damaged",
+    "intent": "delivery_problem",
+    "why": "Some messages mention ruined parcels, indicating possible damage"
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "delivery_problem-2",
+  "cluster_id": "delivery_problem-2",
+  "evidence_ids": [
+   "m_0996726783",
+   "m_3030164403",
+   "m_1129239579",
+   "m_3192723207",
+   "m_1885947681",
+   "m_2475750670"
+  ]
+ },
+ {
+  "title": "Packages marked delivered but not received",
+  "situation": "Customers see delivery as completed while their orders are missing, risking refunds and negative sentiment.",
+  "hypothesis": "Delivered status but missing",
+  "confidence": 0.95,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We see your order is marked delivered but you haven’t received it. We’ll open an investigation with the carrier and arrange a replacement or refund within 2‑3 business days. You’ll receive an update shortly.",
+     "reply_ar": "نلاحظ أن طلبك مُظهر كمسلم لكنك لم تستلمه. سنفتح تحقيقًا مع شركة الشحن ونرتب إما استبدالًا أو استردادًا خلال 2‑3 أيام عمل. ستصلك تحديثات قريبًا."
+    },
+    "why": "Inform all customers and set next steps"
+   },
+   {
+    "type": "update_knowledge",
+    "params": {
+     "title": "Package marked delivered but not received",
+     "answer_en": "If the order shows delivered but you haven’t received it, we will investigate with the carrier and arrange a replacement or refund within 2‑3 business days.",
+     "answer_ar": "إذا ظهر أن الطلب مسلّم لكنك لم تستلمه، سنحقق مع شركة الشحن ونرتب استبدالًا أو استردادًا خلال 2‑3 أيام عمل."
+    },
+    "why": "Prevent repeat inquiries"
+   },
+   {
+    "type": "tag_conversations",
+    "params": {
+     "label": "delivery_mislabel"
+    },
+    "why": "Track this issue for reporting"
+   }
+  ],
+  "reply_en": "We see your order is marked delivered but you haven’t received it. We’ll open an investigation with the carrier and arrange a replacement or refund within 2‑3 business days. You’ll receive an update shortly.",
+  "reply_ar": "نلاحظ أن طلبك مُظهر كمسلم لكنك لم تستلمه. سنفتح تحقيقًا مع شركة الشحن ونرتب إما استبدالًا أو استردادًا خلال 2‑3 أيام عمل. ستصلك تحديثات قريبًا.",
+  "reply_other": {
+   "fr": "Nous constatons que votre colis est indiqué comme livré alors que vous ne l’avez pas reçu. Nous ouvrons une enquête auprès du transporteur et organiserons un remplacement ou un remboursement sous 2‑3 jours ouvrés. Vous recevrez une mise à jour rapidement.",
+   "es": "Vemos que tu pedido aparece como entregado pero no lo has recibido. Iniciaremos una investigación con el transportista y organizaremos un reemplazo o reembolso en 2‑3 días hábiles. Recibirás una actualización pronto."
+  },
+  "alternatives": [
+   {
+    "hypothesis": "Carrier mis‑labelled delivery",
+    "intent": "delivery_problem",
+    "why": "Customers mention driver marking as handed to resident"
+   },
+   {
+    "hypothesis": "Refund request without investigation",
+    "intent": "check_refund_policy",
+    "why": "Some messages directly ask for refund"
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "delivery_problem-1",
+  "cluster_id": "delivery_problem-1",
+  "evidence_ids": [
+   "m_3725340773",
+   "m_2909197144",
+   "m_2932548027",
+   "m_8461739991",
+   "m_0459915678",
+   "m_1389363277"
+  ]
+ },
+ {
+  "title": "Multiple customers report items arriving damaged or defective",
+  "situation": "High volume of damaged/defective items with VIPs involved requires immediate triage to prevent churn and ensure proper compensation.",
+  "hypothesis": "Items arriving damaged or defective",
+  "confidence": 0.95,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We are sorry your item arrived damaged. We have arranged a free replacement to be sent to you immediately. Please keep the original packaging for pickup.",
+     "reply_ar": "نعتذر عن وصول المنتج تالفًا. قمنا بترتيب بديل مجاني ليتم إرساله إليك فورًا. يرجى الاحتفاظ بالتغليف الأصلي."
+    },
+    "why": "Standard resolution for damaged goods: apologize and offer replacement."
+   },
+   {
+    "type": "escalate_to_team",
+    "params": {
+     "team": "logistics",
+     "note": "Cluster of 27 damaged/defective items. Check recent shipments for packaging failures or carrier damage."
+    },
+    "why": "Investigate root cause of high damage rate."
+   }
+  ],
+  "reply_en": "We are sorry your item arrived damaged. We have arranged a free replacement to be sent to you immediately. Please keep the original packaging for pickup.",
+  "reply_ar": "نعتذر عن وصول المنتج تالفًا. قمنا بترتيب بديل مجاني ليتم إرساله إليك فورًا. يرجى الاحتفاظ بالتغليف الأصلي.",
+  "reply_other": {
+   "it": "Ci scusiamo per l'articolo danneggiato. Abbiamo organizzato una sostituzione gratuita che verrà inviata immediatamente. Si prega di conservare l'imballaggio originale.",
+   "fr": "Nous sommes désolés que votre article soit arrivé endommagé. Nous avons organisé un remplacement gratuit qui sera envoyé immédiatement. Veuillez conserver l'emballage d'origine.",
+   "pt": "Pedimos desculpas pelo item danificado. Organizamos uma substituição gratuita que será enviada imediatamente. Por favor, mantenha a embalagem original."
+  },
+  "alternatives": [
+   {
+    "hypothesis": "Product quality defect",
+    "intent": "damaged_or_defective",
+    "why": "Some items may be faulty rather than damaged in transit, requiring a return/refund instead of reship."
+   },
+   {
+    "hypothesis": "Wrong item shipped",
+    "intent": "other",
+    "why": "Customers might be receiving incorrect products, leading to complaints about damage or defects."
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "damaged_or_defective-0",
+  "cluster_id": "damaged_or_defective-0",
+  "evidence_ids": [
+   "m_5973948812",
+   "m_2456938708",
+   "m_6202679954",
+   "m_1004176735",
+   "m_2318246779",
+   "m_7852744341"
+  ]
+ },
+ {
+  "title": "Customers receiving incorrect items instead of their actual purchases",
+  "situation": "Customers are receiving completely wrong items and demand immediate resolution before chargebacks or trust escalation occur.",
+  "hypothesis": "Warehouse shipped incorrect items for recent orders",
+  "confidence": 0.95,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We sent you the wrong item and we are sorry for this mix-up. We are arranging a free replacement for your correct order right away.",
+     "reply_ar": "وصلك الطلب الخطأ ونعتذر عن هذا الخطأ. سنقوم بترتيب شحنة بديلة لطلبك الصحيح فوراً."
+    },
+    "why": "Acknowledge the error and inform customers about the replacement."
+   },
+   {
+    "type": "reship_item",
+    "params": {},
+    "why": ""
+   },
+   {
+    "type": "update_knowledge",
+    "params": {},
+    "why": ""
+   }
+  ],
+  "reply_en": "We sent you the wrong item and we are sorry for this mix-up. We are arranging a free replacement for your correct order right away.",
+  "reply_ar": "وصلك الطلب الخطأ ونعتذر عن هذا الخطأ. سنقوم بترتيب شحنة بديلة لطلبك الصحيح فوراً.",
+  "reply_other": {},
+  "alternatives": [
+   {
+    "hypothesis": "Items damaged during transit",
+    "intent": "other",
+    "why": "Some customers mentioned poor condition alongside incorrect items."
+   },
+   {
+    "hypothesis": "Missing items from orders",
+    "intent": "other",
+    "why": "Customers might confuse receiving a wrong item with missing their main product."
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "wrong_or_misdescribed_item-0",
+  "cluster_id": "wrong_or_misdescribed_item-0",
+  "evidence_ids": [
+   "m_1593497589",
+   "m_4688634158",
+   "m_5888712029",
+   "m_8725235188",
+   "m_7539795781",
+   "m_3780416085"
+  ]
+ },
+ {
+  "title": "Items arriving with incorrect sizing compared to description",
+  "situation": "Customers are receiving items that do not match the listed measurements, risking widespread dissatisfaction and returns if the catalog is not corrected immediately.",
+  "hypothesis": "Incorrect size guide or manufacturing sizing defect",
+  "confidence": 0.9,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We are sorry the size did not fit as expected. We have issued a free replacement shipment for the correct size.",
+     "reply_ar": "نعتذر لأن المقاس لم يكن مناسباً بالشكل المتوقع. لقد قمنا بإنشاء شحنة بديلة مجانية بالمقاس الصحيح."
+    },
+    "why": "Send immediate resolution to affected customers."
+   },
+   {
+    "type": "reship_item",
+    "params": {},
+    "why": ""
+   },
+   {
+    "type": "escalate_to_team",
+    "params": {
+     "team": "tech"
+    },
+    "why": ""
+   }
+  ],
+  "reply_en": "We are sorry the size did not fit as expected. We have issued a free replacement shipment for the correct size.",
+  "reply_ar": "نعتذر لأن المقاس لم يكن مناسباً بالشكل المتوقع. لقد قمنا بإنشاء شحنة بديلة مجانية بالمقاس الصحيح.",
+  "reply_other": {},
+  "alternatives": [
+   {
+    "hypothesis": "Customers ordered the wrong size by mistake",
+    "intent": "other",
+    "why": "Phrasing mentions specific sizing issues."
+   },
+   {
+    "hypothesis": "Poor quality fabric causing fitting issues",
+    "intent": "other",
+    "why": "Some mentions include quality remarks alongside size."
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "wrong_or_misdescribed_item-1",
+  "cluster_id": "wrong_or_misdescribed_item-1",
+  "evidence_ids": [
+   "m_4345252473",
+   "m_4236908950"
+  ]
+ },
+ {
+  "title": "Skincare items causing skin darkening and poor quality complaints",
+  "situation": "Customers are receiving skincare products that darken skin and fail to match descriptions, requiring immediate intervention and potential refunds before further complaints escalate.",
+  "hypothesis": "Skincare batch causes skin darkening and poor quality",
+  "confidence": 0.85,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We are sorry the product did not match expectations. We have processed a full refund to your account, which will appear in a few days.",
+     "reply_ar": "نأسف لأن المنتج لم يكن بالمستوى المطلوب. لقد قمنا بركيز استرداد كامل لمبلغك وسيظهر في حسابك خلال أيام قليلة."
+    },
+    "why": "Acknowledge the quality issue and inform customers of the refund."
+   },
+   {
+    "type": "update_knowledge",
+    "params": {},
+    "why": ""
+   },
+   {
+    "type": "issue_refund",
+    "params": {
+     "amount_sar_each": 109,
+     "reason": "Wrong or misdescribed skincare item causing skin darkening"
+    },
+    "why": "Refund customers for the defective product."
+   }
+  ],
+  "reply_en": "We are sorry the product did not match expectations. We have processed a full refund to your account, which will appear in a few days.",
+  "reply_ar": "نأسف لأن المنتج لم يكن بالمستوى المطلوب. لقد قمنا بركيز استرداد كامل لمبلغك وسيظهر في حسابك خلال أيام قليلة.",
+  "reply_other": {
+   "es": "Lamentamos que el producto no haya cumplido con las expectativas. Hemos procesado un reembolso completo a su cuenta."
+  },
+  "alternatives": [
+   {
+    "hypothesis": "Allergic reactions to ingredients",
+    "intent": "other",
+    "why": "Customers mention skin darkening and poor results."
+   },
+   {
+    "hypothesis": "Counterfeit items received",
+    "intent": "wrong_or_misdescribed_item",
+    "why": "Items not as described could point to counterfeit goods."
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "wrong_or_misdescribed_item-2",
+  "cluster_id": "wrong_or_misdescribed_item-2",
+  "evidence_ids": [
+   "m_4666948380",
+   "m_8161506375"
+  ]
+ },
+ {
+  "title": "Repeated missed deliveries and driver no-shows",
+  "situation": "Multiple customers are experiencing repeated delivery failures and driver no-shows requiring immediate logistical intervention before the weekend cut-off.",
+  "hypothesis": "Couriers failing to deliver and updating false status.",
+  "confidence": 0.9,
+  "actions": [
+   {
+    "type": "send_reply_batch",
+    "params": {
+     "reply_en": "We are very sorry about the repeated missed deliveries for your order. We are investigating this with our courier partner right now and will provide an update within 24 hours.",
+     "reply_ar": "نعتذر بشدة عن التأخير المتكرر وعدم تسليم طلبك في الموعد. نحن نتابع هذه المشكلة مع شركة الشحن الآن وسنوافيك بالتحديث خلال 24 ساعة."
+    },
+    "why": "Acknowledge the delivery failures and set expectations for a follow-up."
+   },
+   {
+    "type": "escalate_to_team",
+    "params": {
+     "team": "logistics",
+     "note": "Multiple reports of missed delivery appointments and driver no-shows requiring route audit."
+    },
+    "why": "Escalate persistent courier no-shows to logistics for carrier review."
+   }
+  ],
+  "reply_en": "We are very sorry about the repeated missed deliveries for your order. We are investigating this with our courier partner right now and will provide an update within 24 hours.",
+  "reply_ar": "نعتذر بشدة عن التأخير المتكرر وعدم تسليم طلبك في الموعد. نحن نتابع هذه المشكلة مع شركة الشحن الآن وسنوافيك بالتحديث خلال 24 ساعة.",
+  "reply_other": {
+   "es": "Lamentamos mucho los problemas con la entrega de tu pedido. Estamos revisando lo sucedido con la empresa de transporte ahora mismo y te daremos una respuesta en 24 horas."
+  },
+  "alternatives": [
+   {
+    "hypothesis": "Stock unavailability following missed delivery",
+    "intent": "other",
+    "why": "Customers mention items becoming unavailable after missed delivery attempts."
+   },
+   {
+    "hypothesis": "Incorrect address details causing delivery failure",
+    "intent": "other",
+    "why": "Drivers might be failing to locate addresses due to poor notes."
+   }
+  ],
+  "question": null,
+  "policy_notes": [],
+  "card_id": "delivery_problem-7",
+  "cluster_id": "delivery_problem-7",
+  "evidence_ids": [
+   "m_0542551634",
+   "m_1250354807",
+   "m_0061268244",
+   "m_6027016382",
+   "m_2067880968",
+   "m_7754862957"
+  ]
+ }
+]

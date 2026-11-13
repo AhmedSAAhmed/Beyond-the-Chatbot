@@ -1,0 +1,1 @@
+{"results": [{"id": "live_b82c5e45ff", "intent": "get_refund", "alt_intent": null, "confidence": 0.9, "language": "en", "sentiment": 0, "urgency": "high", "issue": "unauthorized refund request via injection", "entities": {"order_id": null, "amount": "9000 SAR", "product": null}, "injection": true}]}

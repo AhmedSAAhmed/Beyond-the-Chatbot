@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8f7f4">
+  <title>{% block title %}Decision Stream{% endblock %}</title>
+  <meta name="description" content="A non-chat, non-dashboard interface for CX supervisors: the agent reads every message, finds what is spiking, and surfaces only the decisions that need a human.">
+  <link rel="preconnect" href="https://api.fontshare.com" crossorigin>
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=switzer@400,500,600&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist+Mono:wght@400;500&family=IBM+Plex+Sans+Arabic:wght@400;500&display=swap">
+  <link rel="stylesheet" href="/static/app.css?v=2">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231a1815'/%3E%3Cpath d='M9 10h14M9 16h9M9 22h5' stroke='%23f8f7f4' stroke-width='2.6' stroke-linecap='round'/%3E%3C/svg%3E">
+  <script src="/static/htmx.min.js" defer></script>
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="wrap-wide nav-in">
+      <a class="brand" href="/"><b>Decision Stream</b><span>built for DOO</span></a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="/">Stream</a>
+        <a href="/replaces">What this replaces</a>
+        <a href="/how" class="hide-sm">How it works</a>
+        <a href="https://github.com/AhmedSAAhmed/Beyond-the-Chatbot" class="hide-sm">Code</a>
+        <form method="post" action="/reset"><button class="btn btn-muted" type="submit" title="Start the shift again">Restart shift</button></form>
+      </nav>
+    </div>
+  </header>
+  {% block body %}{% endblock %}
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+  <script src="/static/app.js?v=2" defer></script>
+</body>
+</html>

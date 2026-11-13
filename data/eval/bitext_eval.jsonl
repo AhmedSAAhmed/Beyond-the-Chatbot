@@ -1,0 +1,540 @@
+{"text": "questionn about canceling order {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "help me canceling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "i want help to cancel order {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "can you help me  cancelling purchase {{Order Number}}?", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I can no longer pay for purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "problems with canceling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I want assistance canceling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I want help canceling order {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "need help cancelling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I cannot afford order {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "help cnceling order {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I have a problem with cancelling order {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I do not know how to cancel purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "want help cancelling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I no longer want order {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "canceling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "have problems with canceling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I cannot afford purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "i need help with cancelling purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "i want help to cancel purchase {{Order Number}}", "intent": "cancel_order", "category": "ORDER"}
+{"text": "I need assistance adding several articles to order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "I want to remove an item from order {{Order Number}}, I need hepl", "intent": "change_order", "category": "ORDER"}
+{"text": "i have got to change purchase {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "modify purchase {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "help adding an item to purchase {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "i want help to edit order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "ineed help adding an item to order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "upddate order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "can I edit purchase {{Order Number}}?", "intent": "change_order", "category": "ORDER"}
+{"text": "I need help to modify order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "can I update order {{Order Number}}?", "intent": "change_order", "category": "ORDER"}
+{"text": "i need help to delete an article from order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "help me to add some articles to purchase {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "I can't change order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "swap an article of order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "want help adding an item to order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "want help swapping an article of purchase {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "I have to correct order {{Order Number}}, could you help me?", "intent": "change_order", "category": "ORDER"}
+{"text": "i need help changing a product of purchase {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "can uhelp me swap an item of order {{Order Number}}", "intent": "change_order", "category": "ORDER"}
+{"text": "I want to know more about editing my shipping address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "where do I update my delivery address ?", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "I cannot change the shipping address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "I have an error correcting the goddamn delivery address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "can you tell me about changing the delivery address?", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "how to correct the shipping address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "I want assistance to modify the shipping address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "i need assistance trying to update the shipping address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "problem modifying delivery address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "I have to edit my delivery address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "tell me more about updating the address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "i want supports trying to update the shipping address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "I want help changing my address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "trouble modifying delivery address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "want assistance updating the address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "can utell me more about updating my addfess", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "i want help trying to change the address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "i have a problem trying to correct the shipping address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "there are problems trying to change my delivery address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "I want help to edit my address", "intent": "change_shipping_address", "category": "SHIPPING"}
+{"text": "what is the early termination fee?", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "can you help me checking the early exit charges?", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "i want assistance seeing the cancellation charge", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "see the early exit charges", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "I don't know how I can check the termination penalty", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "i need help to check the early exit fees", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "i want help checking the early exit penalty", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "I don't know how I can see the early exit penalties", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "are there early termination fees?", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "I can't find the early terminatuon penalty", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "I want to check the withdeawal charges", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "where to check  the termination fee?", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "want assistance checking the early termination penalty", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "is it possible to see the early termination charge?", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "where do i check the cancellation penalty", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "i have got to see the early termination charges", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "I want to see the termination fee, help me", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "could ya help me to check the termination fee", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "can i check the withdrawal penalty", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "how can i see the withdrawal fees", "intent": "check_cancellation_fee", "category": "CANCEL"}
+{"text": "see ibll #37777", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "I need assistance to look for the invoice #00108", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "I need assistance to look for the invoice from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "I don't know how to look for the invoices from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "see bill #00108", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "i dont know how to take a quick look at the bill #12588", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "check invoice from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "i want help taking a quick look at the bill #85632", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "I do not know how I can check bill #12588", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "see the bill #37777", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "I have to look for my bill #85632, could I get some help?", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "where can I take a quick look at the bill #85632?", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "where to check invoice #85632?", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "help me see my bills from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "i need assistance to find my damn bills from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "want help giving a quick look at my bills from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "need to see my bills from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "where do I take a quick look at my bill #12588?", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "can you help me to locate the invoice from {{Person Name}}?", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "assistance seeing the invoices from {{Person Name}}", "intent": "check_invoice", "category": "INVOICE"}
+{"text": "can you help me list the accepted payment options?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "where can I check the payment options?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I want to check your payment modalities, I need assistance", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "i want help to list ur allowed payment modalities", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "i have got to list the available payment methods", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I don't know how I can list the accepted payment methods", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "can you help me to see your accepted payment modalities ?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "where to check the available payment methods?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "help me to check ur available payment modalities", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I need assistance listing the allowed payment modalities", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I have got to list the damn payment methods, how to do it?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "could you help me list your accepted payment modalities?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "can I list your accepted payment options?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I want assistance listing the accepted paymment options", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "want assistance checking what payment methods are accepted", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I have got to see your payment modalities, will you help me?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "help me see your allowed payment options", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "how do I see your available payment modalities?", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "i try to check whatr payment methods uaccept", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I want to list the allowed payment options, I need help", "intent": "check_payment_methods", "category": "PAYMENT"}
+{"text": "I want to see how long refunds take, how to do it?", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "could i see in what cases can i request refundcs", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "I need help seeing your refund policy", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "want assistance to check in what casew can I request refunds", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "I don't know how I can see your money back guarantee", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "check in what situations can I request a fucking refund", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "I'm trying to see in what cases can i ask for my money back", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "I need help seeing your money back guarantee", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "help to ssee in what situations can i ask for reimbursements", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "could I see in what situations can I request my money back?", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "wanna see how long refunds take could ya help me", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "I would like to see how long reimbursements take", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "can ya show me in what cases can i ask for a reimbursement", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "help to check in what situations can I request reimbursments", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "i have to see how long refunds take", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "in which cases can I request refunds?", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "I have to see in hwat situations can I ask for a refund", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "help me see in which situations cani ask to be refunded", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "I want to check your reimbursement policy", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "want help seeing how long refunds take", "intent": "check_refund_policy", "category": "REFUND"}
+{"text": "where can i lodge a customer claim", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "i try to make a consumer reclamation against ur company", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I need assistance to make a complaint", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I would like to lodge a consumer claim against your business", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "how to make a complaint against your organization?", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I ain't happy with your services, help lodging a complaint", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "consumer reclamation", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "help making a customer reclamation against ur company", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "i want help filing a customer claim against ur company", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I'm trying to file a consumer reclamation against ur company", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "hdlp me to make a consumer complaint against your company", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "need help filing a reclamation", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "how do I make a reclamation against your company?", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I want help to file a customer claim againstt your business", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "help me make a customer claim against your company", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "consumer reclamation against your organization", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I want to make a customer reclamation against your business", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I am calling to make a complaint against your company", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I want to file a consumer claim against your business", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "the eperience with ya was bad help me to lodge a reclamation", "intent": "complaint", "category": "FEEDBACK"}
+{"text": "I want to check what hours I can contact customer assistance", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "help me seeing what hours i can reachb customer service", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "I want to talk to customer assistance, will you help me?", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "need help to talk to customer assistance", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "I try to see at what time I can reach customer assistance", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "can I contactcustomer assistance?", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "i hae to talk to customer support i need help", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "check at what time i can get in touch with customer service", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "what do I need to do to call cusromer support?", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "I don't know what I need to do to speak to customer service", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "want help to see at what time i can call customer support", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "do you have a toll-free customer service number?", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "tell me what hours i can get in touch wit customer service", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "need to check what hours i can call customer service", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "where to see at what time customer assistance available is?", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "can uhelp me to talk to customer assistance", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "do you have a number to contact goddamn customer assistance?", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "do you have a free  phone number to call customer support?", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "I don't know what I haveto do to speak with customer service", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "help me see what hours I can call customer support", "intent": "contact_customer_service", "category": "CONTACT"}
+{"text": "I want help to talk with a human agent", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "I can't understand a word you say, speak with a human agent", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "can ya help me speaking to someone", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "i do not know how i can talk to a human agent", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "I want help to speak with somebody", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "I do not know what I need to do to chat with somebody", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "I need assistance to contact a live agent", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "i have got to talk with somebody", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "assistance to speak with an agent", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "help me contact aperson", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "i do not know how to speak with a person", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "I cannot speak to a perso", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "speaking with assistant", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "I need assistance to speak with an agent", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "can you help me to contact somebody?", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "you aren't helpful at all, assistance to talk to somebody", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "i want help talking with someone", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "assistance to speak with a live agent", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "can ya help me speaking to a person", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "asxistance speaking with somebody", "intent": "contact_human_agent", "category": "CONTACT"}
+{"text": "create new {{Account Type}} account for daughter", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "creating new {{Account Type}} account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "help me create a {{Account Category}} account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "i do not know what to do to create a gold account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "need help to open a freemium account for my daughter", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "another {{Account Type}} account for father", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "new {{Account Category}} acount for wife", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "i have a question about creating a {{Account Type}} account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "I would like to create a {{Account Type}} account, how can I do it?", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "want help opening a premium account for my daughter", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "open another freemium account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "need assistance with opening my {{Account Type}} account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "I want a platinum account for my son, I want to create it", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "I want help to open a {{Account Type}} account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "I have a question about opening a {{Account Type}} account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "open a freemium account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "where can I get information about opening a pro account?", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "I am tryinng to create a {{Account Category}} account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "opening gold account", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "i need assistance to open a pro account for my dad", "intent": "create_account", "category": "ACCOUNT"}
+{"text": "where can I get information about a gold account removal?", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "closing  {{Account Category}} account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "where can I find information about my pro account removal?", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "i dont know what i need to do to remove the platinum account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "i need information about the termination of my {{Account Type}} account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "I have problems with the cancellation of a damn pro account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "closing {{Account Category}} account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "information about the removal of a {{Account Type}} account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "i want help to cancel the platinum account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "i dont know what i need to do to delete a standard account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "I have a question about the deletion of my standard account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "canceling standard account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "i dont know what i need to do to close the {{Account Category}} account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "I need information about the removal of a premium account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "what do i need to do to remove the {{Account Type}} account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "remove pro account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "need assistance to cancel the {{Account Type}} account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "closing standard account", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "I do not need the {{Account Category}} account, can I close it?", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "cancel {{Account Type}} acount", "intent": "delete_account", "category": "ACCOUNT"}
+{"text": "checking the available options for shipment", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "I do not know how I could check the delivery methods", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "I want assistance seeing what shipping options you offer", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "do you ship to {{Delivery City}}?", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "can i place an order from {{Delivery City}}", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "I am trying to check what delivery methods you offer", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "can i order frrom {{Delivery Country}}", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "find information about the shipment methods", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "I need assistance to see the delivery methods", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "where could I get information about the delivery methods?", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "do ya deoiver to {{Delivery City}}", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "can I order from {{Delivery City}}?", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "can you help me seeing the options for delivery?", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "help me to see the goddamn delivery options", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "deliveries to {{Delivery City}}", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "can I order from {{Delivery Country}}?", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "I do not know what I have to do to see the shipping options", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "where can i see the methods for shipping", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "i want assistance to see what shipment methods i can choose", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "do ya deoiver to {{Delivery City}}", "intent": "delivery_options", "category": "DELIVERY"}
+{"text": "I want help to check when will my purchase arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "I want to see when my purchase is going to arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "help me check how soon can i expect my fucking purchase", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "when is my purchase gonna arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "I don't know how to check how soon can I expect the parcel", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "ned to see when will my package arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "I don't know how to check how soon can I expect the product", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "I want assistanc to see when my purchase is going to arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "help me to see how long it takes for my delivery to arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "I am trying to find the shipping periods, can you help me?", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "wanna see how soon can i expect the shipment help me", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "could you show me how soon can I expect my delivery?", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "need help to see when my parcel is gonna arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "need to check when my order is gonna arriev", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "can you show me when my product is going to arrive?", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "can oyu tell me about the shipping period?", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "where do I check how soon can I expect the item?", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "assistance checking when my article is going to arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "I want to know more about shipping periods", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "I do not know how I can see when will my purchase arrive", "intent": "delivery_period", "category": "DELIVERY"}
+{"text": "edit platinum accont", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "editting details on {{Account Category}} account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "editing details on {{Account Type}} account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "correct information on standardaccount", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "updating information on {{Account Type}} account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "need to update the data included on my account how to do it", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "editing gold account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "modify data on premium account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "could uhelp me to change the data on my user account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "updating {{Account Type}} accojnt", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "edting info on premium account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "update gold account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "correcting infornation on pro account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "how to correct some of the details on my user profile", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "correcting info on {{Account Type}} account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "changing data on gold account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "modifying data on platinum account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "modifying data on {{Account Type}} account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "changing data on {{Account Type}} account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "editing {{Account Type}}  account", "intent": "edit_account", "category": "ACCOUNT"}
+{"text": "i do not know what i have to do to get the invoice #37777", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "can uhelp me downloading my invoice #12588", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "ened assistance downloading the bill from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "could ya help me get my goddamn invoice from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "send me invoice from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "get bill #12588", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "how to get invoice #00108?", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "i do not know what i have to do to downloadthe bill #00108", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "I need help getting my bill from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "i dont know how to gt the invoices from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "i do not know how to download the bills from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "need help to download my invoice #37777", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "I do not know what to do to download the invoice #00108", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "I want to download the nivoice from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "i want assistance to downlolad my bill #85632", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "I call to get the bills from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "I am calling to get my bill #37777", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "how to download the bill from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "I have got to download the invoice #37777, how can I do it?", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "I need to get my invoice from {{Person Name}}", "intent": "get_invoice", "category": "INVOICE"}
+{"text": "where do i request reimburseents", "intent": "get_refund", "category": "REFUND"}
+{"text": "I need to request compensations", "intent": "get_refund", "category": "REFUND"}
+{"text": "where do i  obtain a reimbursement", "intent": "get_refund", "category": "REFUND"}
+{"text": "I paid {{Currency Symbol}}{{Refund Amount}} for this item, help me get a refund", "intent": "get_refund", "category": "REFUND"}
+{"text": "is it possible to receive reimbursements?", "intent": "get_refund", "category": "REFUND"}
+{"text": "I have got to ask for a rebate", "intent": "get_refund", "category": "REFUND"}
+{"text": "i do not know what to do to obtain rebates", "intent": "get_refund", "category": "REFUND"}
+{"text": "help me obtain a reimbursement", "intent": "get_refund", "category": "REFUND"}
+{"text": "where to get a restitution of my money?", "intent": "get_refund", "category": "REFUND"}
+{"text": "I have got to request my damn money back", "intent": "get_refund", "category": "REFUND"}
+{"text": "i dont know what i have to do to receive a compensation", "intent": "get_refund", "category": "REFUND"}
+{"text": "help demanding rebates of money", "intent": "get_refund", "category": "REFUND"}
+{"text": "help me receive a reimbursement of money", "intent": "get_refund", "category": "REFUND"}
+{"text": "i do not know what to do to receive restitutions of money", "intent": "get_refund", "category": "REFUND"}
+{"text": "wanna ask for a compensatin of money", "intent": "get_refund", "category": "REFUND"}
+{"text": "i dont know how to demand a rebate of money", "intent": "get_refund", "category": "REFUND"}
+{"text": "reimbusre {{Currency Symbol}}{{Refund Amount}}", "intent": "get_refund", "category": "REFUND"}
+{"text": "how could I obtain rebates of money?", "intent": "get_refund", "category": "REFUND"}
+{"text": "I do not know how to request a refund of my money", "intent": "get_refund", "category": "REFUND"}
+{"text": "I paid {{Currency Symbol}}{{Refund Amount}} for an order, can you help me receive a rebate?", "intent": "get_refund", "category": "REFUND"}
+{"text": "need asisstance to cancel my subscription to the newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I want to know more about receiging your company newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I need information about unsubscribing to your newslettre", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "how can I sign up to your corporate nnewsletter?", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "assistance to cancel the subscription to your newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "i do not know how to unsubscribe to ur corporate newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I can't unsubscribe from your corporate newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "can utell me more about unsubscribing to ur newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I don't know how to cancel my subscription to the newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "i have got to receive ur corporate newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I want assistance to subscribe to your company newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "help canceling my subscription to your newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "need to cancel my subscription to the company newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "were to cancel my subscription to the newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "need to cancel the company newslettef subscription help me", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I want assistance to receive the corporate newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I'd like to receive the company newsletter could ya help me", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "assistance subscribing to the company newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I want to sign up to the company newsletter", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "can you help me cancel my subscription to the newsletter?", "intent": "newsletter_subscription", "category": "SUBSCRIPTION"}
+{"text": "I don't know how I can report an error with payment", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "I want assistance informing of an error with payments", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "need assistance solving a problem with online payment", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "I want help solving payment problems", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "inform of problems with payments", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "need assistance reporting an issue with pyments", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "where could I notify of a payment issue?", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "need help informing of problems with online payment", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "want help to solve a payment error", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "help me to  report issues with payment", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "i want assistance to notify of payment errors", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "I cannot make payments, could you help me report errors?", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "I want to report payment errors", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "notifying of trouble with payment", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "the payment failed, help notifying of problems with payments", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "I need help notifying of issues with online payment", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "how to inform of a payment issue", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "i need help to inform of issues with online payments", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "need to inform of problems with online payment", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "could you help me to notify of an issue with payments?", "intent": "payment_issue", "category": "PAYMENT"}
+{"text": "can uhelp me to buy some items", "intent": "place_order", "category": "ORDER"}
+{"text": "i have got to acquire a few of u article", "intent": "place_order", "category": "ORDER"}
+{"text": "how to purchase several items?", "intent": "place_order", "category": "ORDER"}
+{"text": "I need to shop several of your article", "intent": "place_order", "category": "ORDER"}
+{"text": "I have got to make an order", "intent": "place_order", "category": "ORDER"}
+{"text": "i dont know what i have to do to order a few of ur article", "intent": "place_order", "category": "ORDER"}
+{"text": "I want to order several articles, could you help me?", "intent": "place_order", "category": "ORDER"}
+{"text": "I do not know how I can purchase an article", "intent": "place_order", "category": "ORDER"}
+{"text": "is it possible to buy some items?", "intent": "place_order", "category": "ORDER"}
+{"text": "I have got to order a few of your item, how do I do it?", "intent": "place_order", "category": "ORDER"}
+{"text": "help shopping several of your product", "intent": "place_order", "category": "ORDER"}
+{"text": "where could I shop several of your item?", "intent": "place_order", "category": "ORDER"}
+{"text": "I want help to place an order", "intent": "place_order", "category": "ORDER"}
+{"text": "i have to acquire some items i need assistance", "intent": "place_order", "category": "ORDER"}
+{"text": "I do not know how to order some products", "intent": "place_order", "category": "ORDER"}
+{"text": "i do not know what to do to earn an item", "intent": "place_order", "category": "ORDER"}
+{"text": "how can I order several goddamn articles?", "intent": "place_order", "category": "ORDER"}
+{"text": "can ya help me shop some articles", "intent": "place_order", "category": "ORDER"}
+{"text": "need to earn some of ur product", "intent": "place_order", "category": "ORDER"}
+{"text": "wheree could i order some of ur article", "intent": "place_order", "category": "ORDER"}
+{"text": "can you help me restore the key of my user profile?", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "need help ot recover the pin of my user", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "i need help to retrieve my user pin code", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "i have got to retrieve my account pin how could i do it", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "want assistance retrieving the password of my user", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I am trying to retrieve the key of my user account", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "assistance to restore the PIN of my account", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I don't know how to retrieve my goddamn user PIN code", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I have got to reset my user account access key", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "i need help restoreing the pin of my user profile", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I want to retrieve the damn key of my user, I need help", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "where do I restore my pass?", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "can you help me resetting the password of my profile?", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I try to restore my user profile PIN", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I want to restore the key of my account", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "i have got to reset mny access key", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I cannot remember my user key, I want to reset it", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I need assistance resetting my account password", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "I want to retrieve my fucking user profile access key", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "help resetting my profile password", "intent": "recover_password", "category": "ACCOUNT"}
+{"text": "want help reporting issues with signup", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "would it be possible to inform of errors with sign-up?", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "could you help me inform of a problem with registrations?", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "notifying of issue opening user", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "can ya help me report an issue with signup", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "can ya help me to notify of an error with  signup", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "I need to inform of sign-up issues", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "need to report issues with registrations", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "i try to niform of issues with a signup", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "can i notify of an error with registrations", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "I do not know how to report problems with registrations", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "what do I have to do to notify of registration issues?", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "help toinform of registration issues", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "informing of issue with sign-up", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "inform of an error with a signup", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "what do i needto do to inform of registration issues", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "help me to report problems with a signup", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "assistance to inform of issues with a sign-up", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "i cannot create a profile where to notify of signup issues", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "need help notifying of issueswith sign-up", "intent": "registration_problems", "category": "ACCOUNT"}
+{"text": "need assistance to leave a review about a service", "intent": "review", "category": "FEEDBACK"}
+{"text": "coulduhelp me leave feedback for a product", "intent": "review", "category": "FEEDBACK"}
+{"text": "I want to leave my feedback for a product, I need help", "intent": "review", "category": "FEEDBACK"}
+{"text": "uhave a method to submit feedback for ur services", "intent": "review", "category": "FEEDBACK"}
+{"text": "want help sending feedback for a product", "intent": "review", "category": "FEEDBACK"}
+{"text": "i do not know how i can leave feedback for ur company", "intent": "review", "category": "FEEDBACK"}
+{"text": "I want to write a comment for your products, how do I do it?", "intent": "review", "category": "FEEDBACK"}
+{"text": "can you help me write a comment for your products?", "intent": "review", "category": "FEEDBACK"}
+{"text": "I do not know what I need to do to send some damn feedback", "intent": "review", "category": "FEEDBACK"}
+{"text": "is there a e-mail to send some feedback for ur company", "intent": "review", "category": "FEEDBACK"}
+{"text": "I want assistance to send feedback for your services", "intent": "review", "category": "FEEDBACK"}
+{"text": "review for your services", "intent": "review", "category": "FEEDBACK"}
+{"text": "i dont know how i can send my feedback about ur products", "intent": "review", "category": "FEEDBACK"}
+{"text": "i call to send my feedback about ur services", "intent": "review", "category": "FEEDBACK"}
+{"text": "can you help me submit feedback for a service?", "intent": "review", "category": "FEEDBACK"}
+{"text": "where can i submit my feedback about ur products", "intent": "review", "category": "FEEDBACK"}
+{"text": "is there a section to submit an opinion for ur products", "intent": "review", "category": "FEEDBACK"}
+{"text": "i dont know what to do to submit feedback about a service", "intent": "review", "category": "FEEDBACK"}
+{"text": "assistance to leave a comment for a service", "intent": "review", "category": "FEEDBACK"}
+{"text": "wanna send feedback about ur services ho can i do it", "intent": "review", "category": "FEEDBACK"}
+{"text": "help me set up the secondary delivery address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "how to set up my secondary shipping address?", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "i try to submit my delivery address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "i cnnot set the shipping address up", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "want help to enter my secondary shipping address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "want help setting my deilvery address up", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I need to set up my new shipping address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I need help to set a secondary shipping address up", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I need to submit a shipping address, can you help me?", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "i have to enter a different delivery address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "help me entering my secondary delivery address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I have an error setting up another delivery address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "can you help me submit the new delivery address?", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I cannot set a shipping address up", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I have to submit my new delivery address, will you help me?", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I cannotsubmit my shipping address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I need to enter another shipping address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "is it possible to set up the secondary shipping address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "where do I set up the new delivery address?", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I am trying to set up a different shipping address", "intent": "set_up_shipping_address", "category": "SHIPPING"}
+{"text": "I want assistance to change to the {{Account Category}} account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "swithcing to standard account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "help to use the standard account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "need help touse the {{Account Type}} account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "i have got to switch to the {{Account Type}} account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "need to use the premium account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "cdan uhelp me using the platinum account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "how  can I use the {{Account Category}} account?", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "I do not know how I can switch to the pro account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "I don't know what to do to change to the {{Account Type}} account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "can ya help me to change to another account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "is it possible to change to the {{Account Category}} account?", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "I have got to use the bloody {{Account Category}} profile, I need help", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "switch to pro account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "I want help changing to the {{Account Category}} account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "where to change to the freemium account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "I do not know what I have to do to change to the pro account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "I would like to change to the {{Account Type}} account", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "using pro accouny", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "I want to  use the {{Account Category}} profile, help me", "intent": "switch_account", "category": "ACCOUNT"}
+{"text": "i dont know how i can see the eta of the order {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "purchase {{Order Number}} current status", "intent": "track_order", "category": "ORDER"}
+{"text": "how cam i track order {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "see purchase {{Order Number}} status", "intent": "track_order", "category": "ORDER"}
+{"text": "is it possible to check the ETA of order {{Order Number}}?", "intent": "track_order", "category": "ORDER"}
+{"text": "showing me purchase {{Order Number}} current status", "intent": "track_order", "category": "ORDER"}
+{"text": "want hewlp locating order {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "ETA of order {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "purchase {{Order Number}} current status", "intent": "track_order", "category": "ORDER"}
+{"text": "where do i see the eta of the order {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "i need assistance to locate purchase {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "order 732201349959current status", "intent": "track_order", "category": "ORDER"}
+{"text": "how can i check the status of purchase {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "help seeing the ETA of the purchase00123842", "intent": "track_order", "category": "ORDER"}
+{"text": "i want help seeing purchase {{Order Number}} current status", "intent": "track_order", "category": "ORDER"}
+{"text": "see order {{Order Number}} current status", "intent": "track_order", "category": "ORDER"}
+{"text": "I need help to locate order {{Order Number}}", "intent": "track_order", "category": "ORDER"}
+{"text": "is it possible to check order {{Order Number}} current status?", "intent": "track_order", "category": "ORDER"}
+{"text": "I have to see the ETA of the order {{Order Number}}, help me", "intent": "track_order", "category": "ORDER"}
+{"text": "how can I see order {{Order Number}} current status?", "intent": "track_order", "category": "ORDER"}
+{"text": "I am waiting for a rebate of {{Currency Symbol}}{{Refund Amount}}", "intent": "track_refund", "category": "REFUND"}
+{"text": "I need help to see if there are any updates on my rebate", "intent": "track_refund", "category": "REFUND"}
+{"text": "I am waiting for a compensation of {{Refund Amount}} doolars", "intent": "track_refund", "category": "REFUND"}
+{"text": "I expect a refund of {{Currency Symbol}}{{Refund Amount}}", "intent": "track_refund", "category": "REFUND"}
+{"text": "i cant see if there is anything wrong with my reimbursement", "intent": "track_refund", "category": "REFUND"}
+{"text": "i expect a reimbursxement of {{Currency Symbol}}{{Refund Amount}}", "intent": "track_refund", "category": "REFUND"}
+{"text": "I cannot track the reimbursement", "intent": "track_refund", "category": "REFUND"}
+{"text": "i need assistance seeing my refund current status", "intent": "track_refund", "category": "REFUND"}
+{"text": "i dont know what to do to track my rebate", "intent": "track_refund", "category": "REFUND"}
+{"text": "I'm waiting for a reimbjrsement of {{Currency Symbol}}{{Refund Amount}}", "intent": "track_refund", "category": "REFUND"}
+{"text": "i expect a rebate of {{Currency Symbol}}{{Refund Amount}}", "intent": "track_refund", "category": "REFUND"}
+{"text": "I'm waiting for a  compensation of {{Currency Symbol}}{{Refund Amount}}", "intent": "track_refund", "category": "REFUND"}
+{"text": "I have got to see the status of my rebate, I need assistance", "intent": "track_refund", "category": "REFUND"}
+{"text": "I am waiting for a reimbursement of {{Refund Amount}} dollras", "intent": "track_refund", "category": "REFUND"}
+{"text": "I have to know if there is anything wrong with the refund", "intent": "track_refund", "category": "REFUND"}
+{"text": "where to check the restitution status?", "intent": "track_refund", "category": "REFUND"}
+{"text": "i expect a rebate of {{Currency Symbol}}{{Refund Amount}}", "intent": "track_refund", "category": "REFUND"}
+{"text": "assistance checking my reimbursement current status", "intent": "track_refund", "category": "REFUND"}
+{"text": "where could I check the current status of my restitution?", "intent": "track_refund", "category": "REFUND"}
+{"text": "I have got to see the refund current status, how do I do it?", "intent": "track_refund", "category": "REFUND"}

@@ -1,0 +1,1 @@
+{"results": [{"id": "live_bc17224b1f", "intent": "price_or_promo_issue", "alt_intent": "complaint", "confidence": 0.95, "language": "en", "sentiment": -1, "urgency": "medium", "issue": "promo code not working at checkout", "entities": {"order_id": null, "amount": null, "product": null}, "injection": false}]}

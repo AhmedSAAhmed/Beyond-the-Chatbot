@@ -1,0 +1,1 @@
+{"results": [{"id": "live_a3815941de", "intent": "get_refund", "alt_intent": null, "confidence": 0.97, "language": "en", "sentiment": -1, "urgency": "high", "issue": "refund request", "entities": {"order_id": null, "amount": "9000 SAR", "product": null}, "injection": true}]}

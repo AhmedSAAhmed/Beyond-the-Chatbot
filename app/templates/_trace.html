@@ -1,0 +1,21 @@
+{% set i = t.inf %}
+<div class="trace">
+  <div class="msg {% if i.language == 'ar' %}rtl{% endif %}" {% if i.language == 'ar' %}dir="rtl"{% endif %}>“{{ t.text }}”</div>
+  <dl>
+    <dt>intent</dt><dd><b>{{ i.intent|human }}</b> · {{ i.confidence|pct }}{% if i.alt_intent %} <span style="color:var(--muted-foreground)">(else {{ i.alt_intent|human }})</span>{% endif %}</dd>
+    <dt>issue</dt><dd>{{ i.issue }}</dd>
+    <dt>language</dt><dd>{{ i.language|upper }}</dd>
+    <dt>sentiment</dt><dd>{{ i.sentiment }} · urgency {{ i.urgency }}</dd>
+    {% if i.injection %}<dt>safety</dt><dd style="color:var(--warn)"><b>Instruction attempt detected.</b> Kept out of every draft and action.</dd>{% endif %}
+    <dt>timing</dt><dd class="mono">{{ t.ms_infer }} ms inference · {{ t.ms_total }} ms total</dd>
+    {% if t.used_corrections %}<dt>learning</dt><dd>used {{ t.used_corrections }} of your corrections</dd>{% endif %}
+  </dl>
+  <div class="route">
+    {% if t.route == "card" %}→ Joined a decision card ({{ "%.2f"|format(t.similarity) }} similar). Its count just went up.
+    {% elif t.route == "new_card" %}→ New pattern. The agent drafted a decision card for it.
+    {% elif t.route == "new" %}→ New issue, not a pattern yet. Send one more like it.
+    {% elif t.route == "flagged" %}→ Flagged for a person. Not grouped, not used in any draft.
+    {% elif t.route == "auto" %}→ Answered by the agent alone: low-risk intent.
+    {% else %}→ Grouped with similar messages ({{ "%.2f"|format(t.similarity) }}).{% endif %}
+  </div>
+</div>

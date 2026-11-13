@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}What this replaces · Decision Stream{% endblock %}
+{% block body %}
+<main class="wrap-wide page">
+  <p class="eyebrow">/// Side by side · same shift, same {{ total|fmt }} real messages</p>
+  <h1>The inbox, the dashboard and the chatbot<br>all make you do the work.</h1>
+  <p class="lead">On the left, the default stack: a queue to scroll, charts to interpret, and an "Ask AI" box you have to know what to type into. On the right, the same data, after the agent has already read every message, grouped them, measured what is unusual and drafted the fix.</p>
+
+  <div class="split">
+    <section class="panel" aria-label="Before">
+      <div class="panel-head"><p class="eyebrow">/// Before · inbox + dashboard + chatbot</p><span class="chip">you find the problem</span></div>
+      <div class="old" aria-hidden="true">
+        <div class="old-main">
+          <div class="old-kpis">
+            <div class="old-kpi">Open<b>{{ total|fmt }}</b></div>
+            <div class="old-kpi">Avg first reply<b>4h 12m</b></div>
+            <div class="old-kpi">CSAT<b>71%</b></div>
+            <div class="old-kpi">SLA breaches<b>212</b></div>
+          </div>
+          <div class="old-chart">
+            <div style="font-weight:bold;margin-bottom:4px">Conversations by tag</div>
+            {% set mx = top[0][1] if top else 1 %}
+            {% for k, n in top %}<div class="old-bar"><span>{{ k|human }}</span><span class="b" style="width:{{ (n / mx * 100)|round }}%"></span><span>{{ n }}</span></div>{% endfor %}
+          </div>
+          <div class="old-inbox">
+            {% for m in inbox %}
+            <div class="old-row"><input type="checkbox"><span>{{ m.ts[11:16] }}</span><span class="t" {% if m.inf.language == 'ar' %}dir="rtl"{% endif %}>{{ m.text }}</span><span class="tag">{{ m.inf.intent|human }}</span></div>
+            {% endfor %}
+          </div>
+        </div>
+        <div class="old-chat">
+          <div class="h">✦ Ask AI</div>
+          <div class="b">
+            <div class="m">Hi! Ask me anything about your support data.</div>
+            <div class="m u">what's going on today?</div>
+            <div class="m">Volume is up 45% vs. last week. Top tags are delivery problem and price issues. Would you like a chart?</div>
+          </div>
+          <div class="i">Type a question…</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="After">
+      <div class="panel-head"><p class="eyebrow">/// After · Decision Stream (live)</p><span class="chip ok">the problem finds you</span></div>
+      <iframe class="frame" src="/" title="Decision Stream, live"></iframe>
+    </section>
+  </div>
+
+  <p style="font-size:12.5px;color:var(--muted-foreground);margin-top:10px">Left: a generic helpdesk mock, not any vendor's product. Its message rows and tag counts are the real shift data; the four KPI tiles are illustrative.</p>
+
+  <h2>What changes for the supervisor</h2>
+  <table class="compare">
+    <tr><th></th><th>Inbox + dashboard + chatbot</th><th>Decision Stream</th></tr>
+    <tr><td>First thing you see</td><td>{{ total|fmt }} open conversations and four KPIs</td><td>The 3–5 decisions that need a person, ranked by money, risk and how unusual they are</td></tr>
+    <tr><td>Finding the spike</td><td>You notice a bar got taller, then filter and read</td><td>The agent compares today with the last two weeks and flags it, with the evidence attached</td></tr>
+    <tr><td>Acting on it</td><td>Open tickets one by one, write the macro, ask finance for refunds</td><td>One drafted batch: replies in each customer's language, refunds within policy, a knowledge update so it stops recurring</td></tr>
+    <tr><td>Using AI</td><td>Ask a chatbot, then do what it says yourself</td><td>The AI proposes; you approve, edit or say "not this"</td></tr>
+    <tr><td>When the AI is wrong</td><td>You may never notice</td><td>"Not this" shows the next-best reading, re-drafts, and re-labels similar messages; every action has a 30-second undo</td></tr>
+    <tr><td>Arabic customers</td><td>A separate queue or a translation step</td><td>Same card; the Arabic reply is written natively, not translated</td></tr>
+  </table>
+</main>
+{% endblock %}

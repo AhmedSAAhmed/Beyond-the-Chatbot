@@ -1,0 +1,23 @@
+# secrets
+.env
+.env.*
+!.env.example
+
+# local-only references (ICM + ECC stay on this machine)
+.local-refs/
+.claude/
+
+# data too large for git
+data/raw/
+
+# python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.sqlite
+*.db
+
+# logs can contain provider error text
+*.log
+data/cache/emb/

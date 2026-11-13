@@ -1,0 +1,142 @@
+{% set d = c.decision %}{% set st = c.stats %}
+{% if c.status == "done" and c.execution %}{% set x = c.execution %}{% set fx = x.effects %}
+<article class="card done" id="card-{{ c.id }}" data-card="{{ c.id }}" data-status="done">
+  <div class="card-body">
+    <div class="done-row">
+      <div class="check" aria-hidden="true">✓</div>
+      <div>
+        <h3>{{ d.title }}</h3>
+        <div class="fx">
+          {% set r = fx.replies %}{{ r.values()|sum }} replies sent{% if r %} ({% for k, n in r.items() %}{{ k|upper }} {{ n }}{% if not loop.last %} · {% endif %}{% endfor %}){% endif %}
+          {% if fx.refund_sar %} · SAR {{ fx.refund_sar|fmt }} refunded{% endif %}
+          {% if fx.credit_sar %} · SAR {{ fx.credit_sar|fmt }} credit{% endif %}
+          {% if fx.reships %} · {{ fx.reships }} replacements shipped{% endif %}
+          {% for tk in fx.tickets %} · ticket {{ tk.id }} → {{ tk.team|human }}{% endfor %}
+          {% if fx.knowledge %} · agent now answers “{{ fx.knowledge.title }}”{% endif %}
+          {% if fx.vip_followups %} · {{ fx.vip_followups }} VIP follow-ups queued{% endif %}
+          {% if x.edited %} · edited by you{% endif %}
+          · receipt <span class="mono">{{ x.digest }}</span>
+        </div>
+      </div>
+      <span class="spacer"></span>
+      <span class="undo-timer" data-until="{{ x.undo_until }}"></span>
+      <button class="btn btn-muted" hx-post="/cards/{{ c.id }}/undo" hx-target="#card-{{ c.id }}" hx-swap="outerHTML">Undo</button>
+    </div>
+  </div>
+</article>
+{% else %}
+<article class="card" id="card-{{ c.id }}" data-card="{{ c.id }}" data-score="{{ c.score }}" data-status="open">
+  <form hx-post="/cards/{{ c.id }}/approve" hx-target="#card-{{ c.id }}" hx-swap="outerHTML">
+    <input type="hidden" name="edited" value="1">
+    <div class="card-body">
+      {% if c.learned %}<p class="banner learned">Corrected by you: “{{ c.learned.was }}” → “{{ c.learned.now }}”. {% if c.learned.moved %}{{ c.learned.moved }} messages re-labelled. {% endif %}New messages like these follow your correction.</p>{% endif %}
+      <div class="card-head">
+        <div class="count">
+          <div class="n" id="count-{{ c.id }}">{{ st.customers }}</div>
+          <div class="l">customers</div>
+          <span class="live" id="live-{{ c.id }}" {% if not c.live_count %}hidden{% endif %}>+<span>{{ c.live_count }}</span> live</span>
+        </div>
+        <div>
+          <p class="eyebrow">
+            {% if c.agent_initiated %}<span class="hot">Agent-initiated{% if c.first_ts %} · spotted {{ c.first_ts }}{% endif %}</span> · {% endif %}{{ c.intent|human }} · {{ d.confidence|pct }} sure
+          </p>
+          <h2>{{ d.title }}</h2>
+          <p class="situation">{{ d.situation }}</p>
+          <div class="meta">
+            {% if c.new %}<span class="chip warn">new today</span>{% elif c.lift >= 1.5 %}<span class="chip warn">{{ "%.1f"|format(c.lift) }}× its usual share</span>{% else %}<span class="chip">usual volume</span>{% endif %}
+            {% if st.vip %}<span class="chip warn" id="vip-{{ c.id }}">{{ st.vip }} VIP</span>{% endif %}
+            {% if st.sar_at_risk %}<span class="chip">SAR <span id="sar-{{ c.id }}">{{ st.sar_at_risk|fmt }}</span> in orders</span>{% endif %}
+            {% for lang, n in st.langs.items() %}<span class="chip info">{{ lang|upper }} {{ n }}</span>{% endfor %}
+            {% if st.injections %}<span class="chip warn">{{ st.injections }} tried to instruct the AI (excluded)</span>{% endif %}
+          </div>
+        </div>
+      </div>
+
+      {% if d.question %}
+      <div class="section">
+        <p class="banner question"><b>The agent is not sure ({{ d.confidence|pct }}).</b> {{ d.question.prompt }}</p>
+        <div class="question-opts">
+          {% for o in d.question.options %}
+          <button class="btn btn-muted" type="button" hx-post="/cards/{{ c.id }}/answer" hx-vals='{"option": {{ o|tojson }}}' hx-target="#card-{{ c.id }}" hx-swap="outerHTML">{{ o }}</button>
+          {% endfor %}
+        </div>
+      </div>
+      {% else %}
+      <div class="section">
+        <div class="section-title"><p class="eyebrow">/// Drafted for your approval</p></div>
+        <ol class="actions">
+          {% for a in d.actions %}{% set p = a.params %}
+          <li class="action">
+            <span class="ix">{{ loop.index }}</span>
+            <span>
+              {% if a.type == "send_reply_batch" %}{{ ACTION_LABEL[a.type] }}, in their language
+              {% elif a.type in ("issue_refund", "issue_credit") %}{{ ACTION_LABEL[a.type] }} SAR <input type="number" name="amount_{{ loop.index0 }}" value="{{ p.amount_sar_each|int }}" min="0" max="{{ 500 if a.type == 'issue_refund' else 100 }}" step="1" aria-label="Amount per customer"> per customer{% if p.reason %} · {{ p.reason }}{% endif %}
+              {% elif a.type == "escalate_to_team" %}{{ ACTION_LABEL[a.type] }} <b>{{ p.team|human }}</b>{% if p.note %}: {{ p.note }}{% endif %}
+              {% elif a.type == "update_knowledge" %}{{ ACTION_LABEL[a.type] }}: “{{ p.title }}”
+              {% elif a.type == "tag_conversations" %}{{ ACTION_LABEL[a.type] }} “{{ p.label }}”
+              {% else %}{{ ACTION_LABEL.get(a.type, a.type|human) }}{% if p.reason %} · {{ p.reason }}{% endif %}{% endif %}
+              {% if a.why %}<span class="why">{{ a.why }}</span>{% endif %}
+            </span>
+            <label class="keep"><input type="checkbox" name="keep" value="{{ loop.index0 }}" checked> keep</label>
+          </li>
+          {% endfor %}
+        </ol>
+        {% if d.policy_notes %}<ul class="policy">{% for n in d.policy_notes %}<li>{{ n }}</li>{% endfor %}</ul>{% endif %}
+      </div>
+
+      <div class="section">
+        <div class="section-title">
+          <p class="eyebrow">/// Reply · click to edit</p>
+          <div class="tabs" role="tablist">
+            <button class="tab" type="button" role="tab" aria-selected="true" data-tab="en">EN</button>
+            {% if d.reply_ar %}<button class="tab" type="button" role="tab" aria-selected="false" data-tab="ar">AR</button>{% endif %}
+            {% for k in d.reply_other %}<button class="tab" type="button" role="tab" aria-selected="false" data-tab="{{ k }}">{{ k|upper }}</button>{% endfor %}
+          </div>
+        </div>
+        <div class="reply on" data-panel="en"><textarea name="reply_en" rows="3" aria-label="English reply">{{ d.reply_en }}</textarea></div>
+        {% if d.reply_ar %}<div class="reply" data-panel="ar"><textarea name="reply_ar" rows="3" dir="rtl" class="rtl" aria-label="Arabic reply">{{ d.reply_ar }}</textarea></div>{% endif %}
+        {% for k, r in d.reply_other.items() %}<div class="reply" data-panel="{{ k }}"><div class="ro">{{ r }}</div></div>{% endfor %}
+      </div>
+      {% endif %}
+
+      <details class="section evidence">
+        <summary>Why the agent thinks so · {{ c.evidence|length }} of {{ st.size }} messages</summary>
+        <ul class="quotes">
+          {% for e in c.evidence %}
+          <li class="quote {% if e.inf.language == 'ar' %}ar rtl{% endif %}">
+            <div {% if e.inf.language == 'ar' %}dir="rtl"{% endif %}>{{ e.text }}</div>
+            <div class="q-meta" dir="ltr">{{ e.channel|human }} · {{ e.inf.language|upper }} · {{ e.inf.intent|human }} {{ e.inf.confidence|pct }} · “{{ e.inf.issue }}”{% if e.source == 'twcs' %} · tweet {{ e.source_ref }}{% elif e.source == 'shein_ar' %} · review #{{ e.source_ref }}{% endif %}</div>
+          </li>
+          {% endfor %}
+        </ul>
+      </details>
+    </div>
+
+    <div class="card-foot">
+      {% if not d.question %}
+      <button class="btn btn-primary" type="submit">Approve</button>
+      <button class="btn btn-muted" type="button" data-edit>Edit</button>
+      {% endif %}
+      <button class="btn btn-muted" type="button" data-notthis>Not this</button>
+      <button class="btn btn-ghost" type="button" hx-post="/cards/{{ c.id }}/snooze" hx-target="#card-{{ c.id }}" hx-swap="outerHTML">Snooze</button>
+      <span class="spacer"></span>
+      {% if not d.question %}
+      {% set money = namespace(v=0) %}{% for a in d.actions %}{% if a.type == "issue_refund" %}{% set money.v = money.v + a.params.amount_sar_each * st.customers %}{% endif %}{% endfor %}
+      <span class="est">On approve: {{ st.customers }} replies{% if money.v %} · up to SAR {{ money.v|fmt }}{% endif %}{% if st.vip %} · {{ st.vip }} VIP follow-ups{% endif %} · undo for 30s</span>
+      {% endif %}
+    </div>
+  </form>
+
+  <form class="notthis" hx-post="/cards/{{ c.id }}/reject" hx-target="#card-{{ c.id }}" hx-swap="outerHTML">
+    <p><b>What is it, then?</b> The agent re-drafts from your answer and re-labels these messages.</p>
+    {% for a in d.alternatives %}
+    <label class="alt"><input type="radio" name="alt" value="{{ loop.index0 }}" {% if loop.first %}checked{% endif %}><span>{{ a.hypothesis }}<span class="why">{{ a.intent|human }} · {{ a.why }}</span></span></label>
+    {% endfor %}
+    <label class="alt"><input type="radio" name="alt" value="custom" {% if not d.alternatives %}checked{% endif %}><span style="flex:1">Something else<input class="field" name="custom" placeholder="Describe the real issue in a few words" style="margin-top:6px" maxlength="200"></span></label>
+    <div style="display:flex;gap:8px;margin-top:10px">
+      <button class="btn btn-primary" type="submit">Re-draft</button>
+      <button class="btn btn-ghost" type="button" data-notthis>Cancel</button>
+    </div>
+  </form>
+</article>
+{% endif %}

@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}How it works · Decision Stream{% endblock %}
+{% block body %}
+<main class="wrap-wide page">
+  <p class="eyebrow">/// Architecture snapshot</p>
+  <h1>data → intent inference → surfaced decision → action</h1>
+  <p class="lead">Every number below comes from this running build. The prompts and rules live in the repo as the stage contracts (ICM: the folder structure is the agent architecture), and the runtime loads those exact files.</p>
+
+  <div class="flow">
+    <div class="step">
+      <p class="eyebrow">/// 01 Data</p>
+      <div class="k">{{ n_msgs|fmt }}</div>
+      <p>real messages: {{ n_shift|fmt }} on Cyber Monday 2017, the rest a 2-week baseline. English, French, Spanish, Portuguese and German from @AmazonHelp tweets; {{ n_ar }} Saudi Arabic reviews split across both windows. DOO-shaped: inbox · contact · conversation · message.</p>
+      <a href="{{ REPO }}stages/01_ingest/CONTEXT.md">contract</a>
+    </div>
+    <div class="step">
+      <p class="eyebrow">/// 02 Intent inference</p>
+      <div class="k">{{ eval.accuracy or "n/a" }}</div>
+      <p>intent accuracy on Bitext labels: {{ eval.examples }}. Rules first (script, order ids, injection), then an LLM picks from {{ n_intents }} intents with language, sentiment, urgency and a normalised issue.</p>
+      <a href="{{ REPO }}stages/02_infer-intent/references/prompt.md">prompt</a> · <a href="{{ REPO }}data/eval/report.md">eval report</a>
+    </div>
+    <div class="step">
+      <p class="eyebrow">/// 03 Patterns → 04 Decisions</p>
+      <div class="k">{{ n_clusters }} → {{ n_cards }}</div>
+      <p>clusters of the model's normalised issue phrases (local TF-IDF vectors, cosine ≥ 0.42 within an intent), lift against the baseline, scored by customers × VIP × money × urgency × novelty. The top ones get a drafted decision, then a policy gate in code.</p>
+      <a href="{{ REPO }}stages/03_detect-patterns/references/clustering.md">scoring</a> · <a href="{{ REPO }}app/policy.py">policy gate</a>
+    </div>
+    <div class="step">
+      <p class="eyebrow">/// 05 Review → 06 Act</p>
+      <div class="k">1 click</div>
+      <p>approve, edit or "not this". Execution is simulated against an order system, audited with a hash, reversible for 30 s. Corrections become few-shot examples for the next inference.</p>
+      <a href="{{ REPO }}stages/06_act-and-learn/references/recovery.md">recovery paths</a>
+    </div>
+  </div>
+
+  <h2>Live inference, not hardcoded flows</h2>
+  <dl class="kv">
+    <dt>Live path</dt><dd>Every message sent from the "Send a customer message" drawer (or <span class="mono">POST /webhooks/doo</span>) is classified by the model and routed to the cluster of its nearest neighbour in real time. Two similar new complaints create an agent-initiated card.</dd>
+    <dt>Models</dt><dd>A pool of free-tier models, Groq first (<span class="mono">gpt-oss-120b</span>, <span class="mono">qwen3.8-27b</span>), Gemini as fallback; a rate-limited model cools down and the next answers. Grouping needs no second model: the issue phrase the LLM writes (in English, whatever the customer's language) is vectorised locally, so the live path has no embedding quota to run out of.</dd>
+    <dt>Calls this process</dt><dd class="mono">{{ usage or "none yet (pipeline outputs loaded from disk)" }}</dd>
+    <dt>Safety</dt><dd>Customer text only ever goes in the user turn as data. Injection attempts are flagged by rules and by the model, excluded from evidence and drafts, and shown on the card. Money actions are capped in code, not in the prompt.</dd>
+    <dt>Each visitor</dt><dd>gets a private sandbox of the same shift, so nothing you approve changes anyone else's screen. "Restart shift" starts over.</dd>
+  </dl>
+
+  <h2>When the interface guesses wrong</h2>
+  <table class="compare">
+    <tr><th>Wrong about</th><th>You do</th><th>It does</th></tr>
+    <tr><td>The issue</td><td>Not this → pick the next reading, or type it</td><td>Re-drafts from your answer, re-labels the card's messages, uses your correction for new messages</td></tr>
+    <tr><td>The action</td><td>Edit amounts, drop an action, rewrite the reply</td><td>Runs the edited version, logs what you changed</td></tr>
+    <tr><td>Not sure</td><td>Answer its one question</td><td>Drafts the actions from your answer</td></tr>
+    <tr><td>You approved by mistake</td><td>Undo within 30 s</td><td>Reverses everything; after that, a compensating entry in the log</td></tr>
+  </table>
+  <p style="font-size:13px;color:var(--muted-foreground)">Tested end to end in <a href="{{ REPO }}tests/test_failure_recovery.py">tests/test_failure_recovery.py</a>; written up in <a href="{{ REPO }}docs/failure-test.md">docs/failure-test.md</a>.</p>
+
+  {% if thesis %}
+  <h2>Two-year thesis</h2>
+  <div class="prose">{% for para in thesis.split("\n\n")[1:] %}{% if para.strip() %}<p>{{ para.strip() }}</p>{% endif %}{% endfor %}</div>
+  {% endif %}
+
+  <footer class="foot">Data: Customer Support on Twitter (Thought Vector, CC BY-NC-SA 4.0) · Arabic Reviews of SHEIN (Apache-2.0) · Bitext customer-support dataset (CDLA-Sharing-1.0). Orders, tiers and refunds are simulated. Theme tokens from Navy by Lexington Themes. Not an official DOO product.</footer>
+</main>
+{% endblock %}

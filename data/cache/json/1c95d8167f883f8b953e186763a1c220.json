@@ -1,0 +1,1 @@
+{"results": [{"id": "live_3e87321ace", "intent": "price_or_promo_issue", "alt_intent": null, "confidence": 0.98, "language": "en", "sentiment": 0, "urgency": "low", "issue": "promo code not applying", "entities": {"order_id": null, "amount": null, "product": null}, "injection": false}]}

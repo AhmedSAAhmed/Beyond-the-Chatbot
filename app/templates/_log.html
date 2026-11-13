@@ -1,0 +1,14 @@
+{% if not rows %}<p style="color:var(--muted-foreground);font-size:13px">Nothing yet. Every approve, edit, undo and correction is recorded here with a hash of exactly what was approved.</p>{% else %}
+<table>
+  {% for r in rows %}
+  <tr>
+    <td class="mono" style="white-space:nowrap;color:var(--faint-foreground)">{{ r.kind }}</td>
+    <td>{{ r.card|human }}
+      {% if r.kind == "approve" %}<br><span style="color:var(--muted-foreground)">{{ r.payload.customers }} customers · {{ r.payload.actions|map(attribute='type')|map('human')|join(', ') }}</span>{% endif %}
+      {% if r.kind == "reject" %}<br><span style="color:var(--muted-foreground)">“{{ r.payload.was }}” → “{{ r.payload.now }}”</span>{% endif %}
+      {% if r.kind == "answer" %}<br><span style="color:var(--muted-foreground)">{{ r.payload.answer }}</span>{% endif %}
+    </td>
+    <td class="mono" style="color:var(--faint-foreground)">{{ r.digest }}</td>
+  </tr>
+  {% endfor %}
+</table>{% endif %}
